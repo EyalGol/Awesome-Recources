@@ -37,3 +37,11 @@ I want to note that we need to add an extension to C:\Program because of windows
 
 #### Summery
 The thing to take from here is to look at how the OS parses commands, parsing is always vulnerable...
+
+### At.exe (old version of windows task scheduler)
+At is running with system privileges as it should be able to access system data, for us it means that if we can get a shell run by At we will have system privileges as the shell will inherit At's privileges.
+To do so the only thing we need is to give At a task to run a shell interactively. We can even run an explorer and close our Explorer.exe and this way we can basically get into an system user shoes so easily its even funny.
+Of course this was patched in sp2 of vista but its interesting as a concept.
+
+#### Summery
+Any program that we can use to run other programs could be a good way to escalate. Schedulers in particular are an interesting target.
