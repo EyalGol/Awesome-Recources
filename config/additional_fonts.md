@@ -1,0 +1,1 @@
+- [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts) - A large collection of font with developer specific fetures and icons
